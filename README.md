@@ -15,7 +15,6 @@
 # QueryShield: Cybersecurity Incident Management System
 
 <div align="center">
-  <img src="path_to_your_logo.png" alt="QueryShield Logo" width="200"/>
   <p>A modern, AI-powered cybersecurity incident management and analysis platform</p>
 </div>
 
@@ -114,15 +113,6 @@ GEMINI_API_KEY=your_gemini_api_key
 JWT_SECRET=your_jwt_secret
 ```
 
-## 🔒 Security Features
-
-- JWT Authentication
-- Password Hashing
-- Role-based Access Control
-- SQL Injection Prevention
-- XSS Protection
-- Input Validation
-
 ## 📊 Database Schema
 
 ### Core Tables
@@ -156,9 +146,6 @@ JWT_SECRET=your_jwt_secret
    ```
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
