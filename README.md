@@ -167,14 +167,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [FastAPI](https://fastapi.tiangolo.com/) for the backend framework
 - [Next.js](https://nextjs.org/) for the frontend framework
 
-## 📞 Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/QueryShield](https://github.com/yourusername/QueryShield)
-
----
-
 <div align="center">
   Made with ❤️ for better cybersecurity incident management
 </div>
