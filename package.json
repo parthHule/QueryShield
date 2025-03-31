@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.14.0",
+    "recharts": "^2.15.1"
+  }
+}
