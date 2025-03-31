@@ -1,76 +1,180 @@
-# Natural Language to SQL Query Converter
 
-This Python script uses Google's Gemini API to convert natural language questions into SQL queries for a cybersecurity incidents database.
 
-## Prerequisites
 
-- Python 3.7 or higher
-- MySQL server (optional - falls back to SQLite if MySQL is not available)
-- Google Cloud project with Gemini API enabled
-- Gemini API key
 
-## Setup
 
-1. Install the required dependencies:
+
+
+
+
+
+
+
+
+
+# QueryShield: Cybersecurity Incident Management System
+
+<div align="center">
+  <img src="path_to_your_logo.png" alt="QueryShield Logo" width="200"/>
+  <p>A modern, AI-powered cybersecurity incident management and analysis platform</p>
+</div>
+
+## 🌟 Features
+
+### 🛡️ Incident Management
+- **Real-time Tracking**: Monitor incidents as they occur
+- **Smart Classification**: AI-assisted incident categorization
+- **Impact Analysis**: Track financial and operational impacts
+- **Root Cause Documentation**: Detailed analysis and documentation
+
+### 👥 Team Collaboration
+- **Role Management**: Define and manage security team roles
+- **Expertise Tracking**: Map team member skills and certifications
+- **Response Workflow**: Streamlined incident response process
+- **Performance Metrics**: Track team and individual performance
+
+### 📊 Analytics & Reporting
+- **Interactive Dashboards**: Real-time incident visualization
+- **Trend Analysis**: Historical data patterns and insights
+- **Department Reports**: Department-wise incident tracking
+- **Custom Reports**: Generate tailored security reports
+
+## 🚀 Quick Start
+
+### Prerequisites
 ```bash
+# Required software
+Node.js 16+
+Python 3.8+
+MySQL 8.0+
+```
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/QueryShield.git
+cd QueryShield
+```
+
+2. **Frontend Setup**
+```bash
+cd new-frontend
+npm install
+npm run dev
+```
+
+3. **Backend Setup**
+```bash
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Start server
+uvicorn api:app --reload
 ```
 
-2. Set up your environment variables:
-```bash
-# On Windows
-set GEMINI_API_KEY=your_api_key_here
-set MYSQL_USER=your_mysql_user  # Optional
-set MYSQL_PASSWORD=your_mysql_password  # Optional
-
-# On Linux/Mac
-export GEMINI_API_KEY=your_api_key_here
-export MYSQL_USER=your_mysql_user  # Optional
-export MYSQL_PASSWORD=your_mysql_password  # Optional
+4. **Database Setup**
+```sql
+-- Run the schema file
+source final_3nf_schema.sql
 ```
 
-3. Ensure your schema.sql file is in the same directory as the script.
+## 🛠️ Tech Stack
 
-## Usage
+### Frontend
+- **Next.js 13+**: React framework
+- **TypeScript**: Type safety
+- **Tailwind CSS**: Styling
+- **Framer Motion**: Animations
+- **Shadcn UI**: Component library
 
-1. Run the script:
-```bash
-python sql_query_generator.py
+### Backend
+- **FastAPI**: API framework
+- **Python 3.8+**: Backend language
+- **MySQL**: Database
+- **Google Gemini AI**: AI integration
+- **JWT**: Authentication
+
+## 📝 Environment Setup
+
+### Frontend (.env.local)
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
-2. Enter your questions in natural language. For example:
-   - "Show me all critical severity incidents"
-   - "What is the total financial impact of incidents in 2024?"
-   - "List all incidents reported by John Smith"
+### Backend (.env)
+```env
+DATABASE_URL=mysql://user:password@localhost:3306/cybersecurity_incidents_3nf
+GEMINI_API_KEY=your_gemini_api_key
+JWT_SECRET=your_jwt_secret
+```
 
-3. Type 'exit' to quit the program.
+## 🔒 Security Features
 
-## Features
+- JWT Authentication
+- Password Hashing
+- Role-based Access Control
+- SQL Injection Prevention
+- XSS Protection
+- Input Validation
 
-- Converts natural language questions to SQL queries using Gemini AI
-- Supports both MySQL and SQLite databases
-- Displays results in a formatted table
-- Handles errors gracefully
-- Includes comprehensive schema understanding
+## 📊 Database Schema
 
-## Error Handling
+### Core Tables
+- `incidents`: Track security incidents
+- `affected_systems`: Monitor impacted systems
+- `security_team`: Manage team members
+- `reporters`: Track incident reporters
+- `departments`: Organizational structure
 
-The script includes error handling for:
-- Missing API key
-- Database connection issues
-- Invalid SQL queries
-- Empty results
-- Missing schema file
+### Reference Tables
+- `severity_levels`: Incident severity classification
+- `incident_types`: Types of security incidents
+- `system_types`: Categories of systems
+- `criticality_levels`: System importance levels
+- `security_roles`: Team member roles
 
-## Database Schema
+## 🤝 Contributing
 
-The script works with the cybersecurity incidents database schema, which includes tables for:
-- Incidents
-- Severity Levels
-- Incident Types
-- Affected Systems
-- Departments
-- Reporters
-- Security Team Members
-- Incident Responses
-- Incident Logs 
+1. Fork the repository
+2. Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Shadcn UI](https://ui.shadcn.com/) for the beautiful components
+- [Google Gemini AI](https://cloud.google.com/vertex-ai) for AI capabilities
+- [FastAPI](https://fastapi.tiangolo.com/) for the backend framework
+- [Next.js](https://nextjs.org/) for the frontend framework
+
+## 📞 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/QueryShield](https://github.com/yourusername/QueryShield)
+
+---
+
+<div align="center">
+  Made with ❤️ for better cybersecurity incident management
+</div>
